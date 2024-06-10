@@ -12,7 +12,7 @@ const { Sequelize, DataTypes } = require('sequelize');
       idle: 10000
     }
 });*/
-const sequelize = new Sequelize('testdb', 'admin', 'admin', {
+const sequelize = new Sequelize('testdb', 'root', 'admin', {
     host: 'localhost',
     dialect: 'mysql', // Specify the dialect (in this case, MySQL)
     operationsAliases: false,
