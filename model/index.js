@@ -1,19 +1,8 @@
 const { Sequelize, DataTypes } = require('sequelize');
 
 // Initialize Sequelize connection
-/*const sequelize = new Sequelize('mytestdb', 'jitendraadmin', 'jks12jk123', {
-    host: 'mytestdb.cfai2mi0yv43.ap-southeast-2.rds.amazonaws.com',
-    dialect: 'mysql', // Specify the dialect (in this case, MySQL)
-    operationsAliases: false,
-    pool: {
-      max: 5,
-      min: 0,
-      acquire: 30000,
-      idle: 10000
-    }
-});*/
-const sequelize = new Sequelize('testdb', 'root', 'admin', {
-    host: 'localhost',
+const sequelize = new Sequelize('mytestdb', 'my_admin', 'jks#@12jk123', {
+    host: 'mytestdb.cftr2mi870yv43.ap-southeast-2.rds.amazonaws.com',
     dialect: 'mysql', // Specify the dialect (in this case, MySQL)
     operationsAliases: false,
     pool: {
@@ -23,6 +12,17 @@ const sequelize = new Sequelize('testdb', 'root', 'admin', {
       idle: 10000
     }
 });
+/*const sequelize = new Sequelize('testdb', 'root', 'admin', {
+    host: 'localhost',
+    dialect: 'mysql', // Specify the dialect (in this case, MySQL)
+    operationsAliases: false,
+    pool: {
+      max: 5,
+      min: 0,
+      acquire: 30000,
+      idle: 10000
+    }
+});*/
 
 const db = {};
 db.sequelize = sequelize;
