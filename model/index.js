@@ -1,8 +1,8 @@
 const { Sequelize, DataTypes } = require('sequelize');
 
 // Initialize Sequelize connection
-const sequelize = new Sequelize('mytestdb', 'my_admin', 'jks#@12jk123', {
-    host: 'mytestdb.cftr2mi870yv43.ap-southeast-2.rds.amazonaws.com',
+const sequelize = new Sequelize('mytestdb_sql', 'my_admin_test', 'jk32AAs#@12jk123', {
+    host: 'mytestdb.cftr2mi870yvsfsddf43.ap-southeast-2.rds.amazonaws.com',
     dialect: 'mysql', // Specify the dialect (in this case, MySQL)
     operationsAliases: false,
     pool: {
